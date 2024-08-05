@@ -1,0 +1,199 @@
+body {
+  background-color: #F5F7FA;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0; /* Reset default body margin */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 16%;
+  background-color: #ffffff;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background-color: #1a16f3;
+  color: #ffffff;
+}
+
+.sidebar-item i {
+  margin-right: 10px;
+}
+
+.sidebar-item span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 16%;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Main div of all files */
+.main {
+  margin-left: 17%;
+  margin-right: 1%;
+}
+/* Main div of rate products */
+.rate-main {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.rate-main h2 {
+  text-align: left;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+/* Button for add things */
+.manageheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalbtn {
+  display: flex;
+  align-items: center;
+}
+
+/* Signin */
+.main-signin {
+  font-family: Platypi;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+}
+.main-signin .form {
+  background-color: white;
+  width: 30%;
+  height: 80vh;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-signin .form form {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.main-signin .form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-signin .form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-signin .form button {
+  color: white;
+  background-color: #018673;
+  border: 1px solid #018673;
+  border-radius: 10px;
+  height: 35px;
+  margin-top: 5%;
+  width: 30%;
+  font-size: 18px;
+}
+.main-signin .form form button:hover {
+    background-color: #00C8AC;
+    border: 1px solid #00C8AC;
+}
+.main-signin .form form .Link {
+  font-size: 13px;
+  text-decoration: underline;
+}
+.main-signin .form form select,
+.main-signin .form form input {
+  height: 10%;
+  width: 80%;
+  border: 1px solid rgb(182, 182, 182, 0.3);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.main-signin .form form select {
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .main-signin .form {
+    width: 80%;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .main-signin .logo-div {
+    display: none;
+  }
+}
+.main-signin .logo-div {
+  background-image: url(/public/sidepic.jpg);
+  background-size: cover;
+  width: 35%;
+  height: 80vh;
+}
+/* ------------------------ */
+
+/* Pie Chart */
+.pie-chart {
+  display: flex;
+  gap: 20%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pie-chart .chart {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 30%;
+  height: 30%;
+}
